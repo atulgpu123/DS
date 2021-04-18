@@ -1,0 +1,14 @@
+^(?=[a-zA-Z0-9]*$)(?:.{8}|.{11}|.{12})$
+
+
+Pattern mypattern = Pattern.compile(MYREGEX, Pattern.CASE_INSENSITIVE);
+Matcher mymatcher= mypattern.matcher(mystring);
+
+
+Configuration
+
+  [{"bankName":"A","country","a","drCode":"DR1","bicCode":"^(AB|AB[a-zA-Z0-9]{5})$","accountValidationRegex":"^(?=[a-zA-Z0-9]*$)(?:.{8}|.{11})$"},
+{"bankName":"B","country","b","drCode":"DR1","bicCode":"^(CD|CD[a-zA-Z0-9]{5})$","accountValidationRegex":"^(?=[a-zA-Z0-9]*$)(?:.{9}|.{11})$"},
+{"bankName":"C","country","c","drCode":"DR1","bicCode":"^(EF|EF[a-zA-Z0-9]{5})$","accountValidationRegex":"^(?=[a-zA-Z0-9]*$)(?:.{10}|.{11})$"},
+{"bankName":"D","country","d","drCode":"DR1","bicCode":"^(GH|GH[a-zA-Z0-9]{5})$","accountValidationRegex":"^(?=[a-zA-Z0-9]*$)(?:.{12}|.{11})$"},
+{"bankName":"E","country","e","drCode":"DR1","bicCode":"^(GH|GH[a-zA-Z0-9]{5})$","accountValidationRegex":"^(?=[a-zA-Z0-9]*$)(?:.{14}|.{11})$"}]
